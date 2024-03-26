@@ -19,8 +19,8 @@ const connectDB = require("./config/dbconfig");
 const app = express();
 
 app.use(cors(
-  origin:"https://ogreenery.netlify.app",
-  methods:["POST", "GET"],
+  origin: ["https://ogreenery.netlify.app"],
+  methods: ["POST", "GET"],
   credentials: true
 ));
 app.use(express.json());
